@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block head %}
+	<link rel="stylesheet" href="{{ url_for('static', filename='stock.css')}}">
+	<script src="{{ url_for('static', filename='highstock.js')}}"></script>
+	<script src="{{ url_for('static', filename='stock.js')}}"></script>
+{% endblock %}
+{% block contentheader %}
+	<p>Poetry</p>
+{% endblock %}
+{% block content %}
+	<div class="stockcontainer">
+		<div class="stockchart">
+
+		</div>
+	</div>
+
+{% endblock %}

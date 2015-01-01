@@ -1,0 +1,102 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width">
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="{{ url_for('static', filename='photog.js')}}"></script>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='photog.css')}}">
+</head>
+<body>
+<div class="grid">
+	<div class="container">
+		<div class="header">
+			<img id="logo" src="{{ url_for('static', filename='photog_logo.png')}}">
+		</div>
+		<div class="col-3-4">
+			<div class="main-wrapper">
+				<div id="aboutme" class="content">
+					<div class="inner-text">
+						<h3>background and experience</h3>
+						<p>my name is <span class="active">amelie</span> and i've been taking pictures since i got my first camera at age 7. i received a b.a. in photography from UC - Irvine in 2008 and have been doing freelance photography since then.
+						</p>
+						<p>my pictures have appeared in the following publications:</p>
+						<ul>
+							<li>Photo Monthly</li>
+							<li>le foto</li>
+							<li>Landscaped</li>
+							<li>phot-88</li>
+						</ul>
+					</div>
+				</div>
+				<div id="mywork" class="content group">
+					<div class="picgrid">
+						<div class="innerpic">
+							<img id="pic1" src="{{ url_for('static', filename='plains_landscape.jpg')}}">
+						</div>
+					</div>
+					<div class="picgrid">
+						<div class="innerpic">
+							<img id="pic2" src="{{ url_for('static', filename='mountain_landscape.jpg')}}">
+						</div>
+					</div>
+					<div class="picgrid">
+						<div class="innerpic">
+							<img id="pic3" src="{{ url_for('static', filename='plains_landscape.jpg')}}">
+						</div>
+					</div>
+					<div class="picgrid">
+						<div class="innerpic">
+							<img id="pic4" src="{{ url_for('static', filename='plains_landscape.jpg')}}">
+						</div>
+					</div>
+				</div>
+				<div id="cameras" class="content">
+					<div class="inner-text">
+						<h3>cameras</h3>
+						<ul class="nobullet">
+							<li>Canon EOS 5D mark II DSLR</li>
+							<li>Olympus OM-D E-M1</li>
+						</ul>
+						<hr>
+						<h3>lenses</h3>
+						<ul class="nobullet">
+							<li>Canon 24-70mm F/4L IS USM</li>
+							<li>Sigma 120-300mm F2.8 DG OS HSM</li>
+							<li>Canon EF 40mm f/2.8 STM</li>
+						</ul>
+						<hr>
+						<h3>tripod</h3>
+						<ul class="nobullet">
+							<li>Manfrotto 680B Monopod 4-SCTN</li>
+							<li>Vanguard Alta Pro 263AB</li>
+						</ul>
+						<hr>
+						<h3>lights</h3>
+						<ul class="nobullet">
+							<li>Polaroid 312 Ultra High Powered Super Bright LED</li>
+							<li>Neewer 160 LED CN-160 Dimmable Ultra High Power</li>
+						</ul>
+					</div>
+				</div>
+				<div id="contactme" class="content">
+					<div class="inner-text">
+						<h3>phone</h3>
+						<p>865-987-0505</p></span>
+						<hr>
+						<h3>email</h3>
+						<p>amelieyoungphotography@netfire.com</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-1-4 sidebar">
+			<ul class="navigation">
+				<li id="about">about</li>
+				<li id="work">my work</li>
+				<li id="equipment">equipment</li>
+				<li id="contact">contact</li>
+			</ul>
+		</div>
+	</div>
+</div>
+</body>
+</html>

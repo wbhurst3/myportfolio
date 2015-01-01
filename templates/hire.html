@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+{% block head %}
+	<link rel="stylesheet" href="{{ url_for('static', filename='hire.css')}}">
+{% endblock %}
+{% block content %}
+<div class="hire-container">
+	{% if success %}
+			<h3>Thank you for your interest. I'll be in contact within 24 hours.</h3>
+		{% else %}
+			<p>
+				Hi. Thanks for visiting my site. I'm a freelance web developer in the Knoxville area currently looking for new opportunities.
+			</p>
+			<p>
+				If you're looking for a web developer committed to quality, fill out the form below and I'll get back to you within 24 hours.
+			</p>
+
+			{% for message in form.name.errors %}
+				<div class="flash"> {{ message }}</div>
+			{% endfor %}
+			{% for message in form.email.errors %}
+				<div class="flash"> {{ message }}</div>
+			{% endfor %}
+			{% for message in form.subject.errors %}
+				<div class="flash"> {{ message }}</div>
+			{% endfor %}
+			{% for message in form.message.errors %}
+				<div class="flash"> {{ message }}</div>
+			{% endfor %}
+			
+			<form action="{{ url_for('hire') }}" method="post">
+				{{ form.hidden_tag() }}
+
+				{{ form.name.label }}
+				{{ form.name }}
+
+				{{ form.email.label }}
+				{{ form.email }}
+
+				{{ form.subject.label }}
+				{{ form.subject }}
+
+				{{ form.message.label }}
+				{{ form.message }}
+
+				{{ form.submit }}
+		</form>
+	</div>
+	{% endif %}
+</div>
+{% endblock %}

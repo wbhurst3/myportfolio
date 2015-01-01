@@ -1,0 +1,13 @@
+.content-header {
+  display: none;
+}
+
+.stockcontainer {
+	width: 70%;
+	margin: 40 auto;
+}
+
+.stockchart {
+	width: 100%;
+	height: 500px;
+}

@@ -1,0 +1,74 @@
+.content-header {
+  display: none;
+}
+
+.hire-container {
+  width: 70%;
+  margin: 40 auto;
+}
+
+/* Contact form */
+form {
+  min-width: 500px;
+}
+form label {
+  font-size: 1.2em;
+  font-weight: bold;
+  display: block;
+  padding: 10px 0;
+}
+ 
+form input#name,
+form input#email,
+form input#subject {
+  width: 400px;
+  background-color: #fafafa;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+  border: 1px solid #cccccc;
+  padding: 5px;
+  font-size: 1.1em;
+}
+ 
+form textarea#message {
+  width: 500px;
+  height: 100px;
+  background-color: #fafafa;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+  border: 1px solid #cccccc;
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 1.1em;
+}
+ 
+form input#submit {
+  transition: all 0.2s ease-in-out;
+  background: transparent;
+  box-shadow: 0 0 3px  gray;
+  color: rgba(0, 0, 0, 0.8);
+  border:1px solid #d8d8d8;
+  color: #000000; 
+  display: block;
+  font-weight:bold;
+  font-size: 1.2em; 
+  padding: 15 25; 
+  text-align: center;
+  border-radius: 5px;
+}
+ 
+form input#submit:hover{
+  cursor: pointer;
+  border:1px solid #c1c1c1; 
+  transition: all 0.2s ease-in-out;
+  background: rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 5px gray;
+  color: rgba(0, 0, 0, 1);
+}
+
+.flash {
+  color: red;
+  padding: 10px;
+}

@@ -1,0 +1,162 @@
+{% extends "layout.html" %}
+{% block head %}
+	<link rel="stylesheet" href="{{ url_for('static', filename='poetry.css')}}">
+	<script src="{{ url_for('static', filename='poetry.js')}}"></script>
+{% endblock %}
+{% block contentheader %}
+	<p>Poetry</p>
+{% endblock %}
+{% block content %}
+	<div class="poem-container">
+		<div class="intro"><p>I've always valued poetry for its concision and expressiveness, and I value the same qualities in code.</p> 
+			<p>Below you'll find some of my more recent work. Click on a title to show and hide the corresponding work.</p></div>
+		<ul class="poem-list">
+			<li class="poem-title">Sketch From Opposing Angles</li>
+			<li class="poem-title">Hand and Wing</li>
+			<li class="poem-title">Drawing Blinds</li>
+			<li class="poem-title">Leaves</li>
+		</ul>
+		<div class="poem-body" id="Sketch">
+				<p>The tool rack hangs on a finger-<br>
+				thin strip of wood. Rusty clawhammer,<br>
+				saw blades, and harrowing discs arranged like found art.<br>
+				The tractor shed is a museum of its own kind.<br>
+				The broken fridge, orange and gilded with chrome;<br>
+				you keep your bolts in the crisper, washers in the butter tray.<br>
+				The axe spends most of his year in the corner, upside-down.<br>
+				His head is slowly slipping off; he’s taken out<br>
+				only to rip up old stumps.<br>
+				Air compressor, old tires stacked five high,<br>
+				sledgehammer and three-foot monkey wrench,<br>
+				the augmentations of strength which allow us<br>
+				to split the earth, mold metal to a slicing edge.</p>
+
+				--<br>
+
+				<p>The fields beyond the door:<br>
+				quilts of green and white, irrigation sprinklers gushing<br>
+				water in wide brushes across the sky.<br>
+				The slight slopes of Georgia farmland tilt<br>
+				like the rocky humus of Cezanne’s Quarry.<br>
+				They exist only in flashes of muted color, only<br>
+				in a wide estimation of its berth and breadth,<br>
+				only in a blink remembered twenty years later,<br>
+				when all toil blurs with all rest, when all waters<br>
+				that flow from faded orange watercoolers blend<br>
+				with dusty clay and form the dark swirling mud<br>
+				from which life grows and to which life returns.</p>
+		</div>
+		<div class="poem-body" id="Hand">
+				<p>Once I found in my science textbook a diagram<br>
+				showing wings and hands, lost cousins. The relation<br>
+				was tenuous at first: fingers splayed<br>
+				across the page aped the curve the fan<br>
+				of feathers made. I measured every angle,<br>
+				weighed each knuckle and pock, like a father<br>
+				testing muted likeness in a newborn's face.<br>
+				Paired symmetry over time lost its claim<br>
+				on ordered growth. Weeks later, my teacher explained<br>
+				the use of tools: crudely carved bones designed<br>
+				to spear the prey; drills of sinew string<br>
+				and alder twig. Man's terraced progress was plain.<br>
+				We'd found a way to build utility,<br>
+				leaving the useless air for dumber beings.
+				</p>
+		</div>
+		<div class="poem-body" id="Drawing">
+			<p>Lovers begin to mimic one another:<br>
+			speaking each other's words<br>
+			so as to sound familiar,<br>
+			the homage of imitation.<br>
+			I've heard it for myself---</p>
+
+			<p>the hawk's screech re-sounded through<br>
+			the blue jay's thinner throat;<br>
+			he's an amateur impersonator, only relaying<br>
+			the sound of the message, not the spirit:<br>
+			seizing, talons tearing up a carcass.<br>
+
+			<p>Caught in the beak of remembrance,<br>
+			I find myself drawing up the blinds,<br>
+			talking to the morning much like you did<br>
+			when you still lived,<br>
+			my voice full of sound---seizing---<br>
+			but no spirit.</p>
+		</div>
+		<div class="poem-body" id="Leaves">
+				<h4>1</h4>
+
+				<p>In an effort to fight sleep<br>
+				Bodhidharma cut off his eyelids, they say.<br>
+				They sprouted into cha--the first<br>
+				spreading tea leaves.</p>
+
+				<h4>2</h4>
+
+				<p>She sipped Darjeeling from a glazed green mug. <br>
+				Its vapors danced around her face.<br>
+				Moonlight fell in jagged slants. Her pose--effortless <br>
+				and crafted, right foot crossed under left leg; the couch,<br>
+				her landscape, faded around her.<br>
+				If we left today, we'd be somewhere else tomorrow.</p>
+
+				<h4>3</h4>
+
+				<p>Her eyelids fluttering in sleep<br>
+				sleek beetle-shell of my Impala<br>
+				foggy high-beam compound eyes<br>
+				interstate for miles<br>
+				defrost and static 60s radio</p>
+
+				<h4>4</h4>
+
+				<p>The hood belched smoke as the sun blanketed the horizon. She'd stay with the car, try to flag
+				someone down. I'd walk to Strawberry, an oddly named town buried in a thicket of dunes. I 
+				heard a Buddhist koan once about a man eating a strawberry while hanging from a cliff. The 
+				tigers had surrounded him and it was his last meal.</p>
+
+				<h4>5</h4>
+
+				<p>The stripes of her sunburn<br>
+				shone white, pearly<br>
+				when she stepped out <br>
+				of the motel shower. <br>
+				Was there a koan for this?<br>
+				Had someone been here before,<br>
+				and did they leave<br>
+				notes behind the photocopied paintings. </p>
+
+				<h4>6</h4>
+
+				<p>They don't make roadside divorce courts<br>
+				the way they make roadside chapels,<br>
+				so there was no pomp <br>
+				in the realization that we were not there<br>
+				anymore, just here. I found an Indian's<br>
+				tea house off the interstate <br>
+				and Grace and I ordered chai. <br>
+				We sipped for hours in silence. </p>
+
+				<h4>7</h4>
+
+				<p>The cupboards in the kitchen<br>
+				never fully closed after the trip.<br>
+				I slept on the loveseat for a week.<br>
+				When I developed a kink in my back,<br>
+				I moved back to our bed.<br>
+				On an impulse we left;<br>
+				on an impulse we returned home.</p>
+
+				<h4>8</h4>
+
+				<p>I stared at the white rivers<br>
+				of grout that split the even<br>
+				rice paddies of our tiled<br>
+				shower as water dripped<br>
+				into my eyes.<br>
+				Nine years of wall-gazing<br>
+				and I still see the wall.</p>
+		</div>
+	</div>
+
+{% endblock %}

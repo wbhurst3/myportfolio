@@ -1,0 +1,69 @@
+hr {
+	background: #333;
+	border: 0;
+	height: 1px;
+	width: 700px;
+}
+
+.calc-body {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.calc-face {
+	margin: 0 auto;
+}
+
+.calc-face .results {
+	background: #f7f7f7;
+	border: 1px solid #bbb;
+	-webkit-border-radius: 	5px;
+	-moz-border-radius: 	5px;
+	border-radius: 			5px;
+	display: block;
+	font-family: 'VT323', monospace;
+	font-size: 2.5em;
+	height: 80px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px;
+	width: 300px;
+	box-shadow: 0 0 3px gray;
+}
+
+.calc-face table {
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+}
+
+.calc-face button {
+	transition: all 0.2s ease-in-out;
+	background: transparent;
+	border: 1px solid #999;
+  border-radius: 5px;
+	color: #666;
+  cursor: pointer;
+  font-size: 2em;
+	height: 60px;
+	width: 70px;
+	box-shadow: 0 0 3px gray;
+	color: rgba(0, 0, 0, 0.8);
+}
+
+.calc-face button#clear {
+	width: 218px;
+}
+
+.calc-face button:hover {
+	transition: all 0.2s ease-in-out;
+	background: rgba(0, 0, 0, 0.05);
+	box-shadow: 0 0 5px gray;
+	color: rgba(0, 0, 0, 1);
+}
+
+@media (max-width: 900px) {
+	.calc-face {
+		width: 300px;
+	}
+}

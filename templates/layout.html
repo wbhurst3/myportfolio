@@ -1,0 +1,47 @@
+<html>
+<head>
+	<link rel="stylesheet" href="{{ url_for('static', filename='layout.css')}}">
+	<link href='//fonts.googleapis.com/css?family=Roboto:400,700,400italic' rel='stylesheet'>
+	<link href='//fonts.googleapis.com/css?family=Lato:400,700,300italic,400italic' rel='stylesheet'>
+	<script src="{{ url_for('static', filename='jquery-1.11.1.js')}}"></script>
+	<script src="{{ url_for('static', filename='layout.js')}}"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	{% block head %}
+	{% endblock %}
+</head>
+
+<body>
+	<div class="container">
+		<nav>
+			<div class="sidebar">
+				<a class="logolink" href="{{ url_for('index')}}"><img src="{{ url_for('static', filename='me_cropped.jpg')}}" alt="me"></a>
+				<div class="logotext">
+					<p class="title">Ben Hurst</p>
+					<p class="tagline italic">Web Developer</p>
+				</div>
+				<ul>
+					<a href="{{ url_for('calculator')}}"><li>Calculator</li></a>
+					<a href="{{ url_for('poetry')}}"><li>Poetry</li></a>
+					<!-- <a href="{{ url_for('stock')}}"><li>Stock Charts</li></a> -->
+					<a href="{{ url_for('hire')}}"><li class="last">Hire Me</li></a>
+				</ul>
+			</div>
+		</nav>
+		<div class="mainbody">
+			<div class="content">
+				<div class="content-header">
+				{% block contentheader %}{% endblock %}
+				</div>
+				{% block content %}{% endblock %}
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="social-buttons">
+			<img id="pointer" src="{{ url_for('static', filename='socialmediapointer.png')}}">
+			<a href="//www.linkedin.com/pub/william-hurst/2b/81b/728"><img src="{{ url_for('static', filename='linkedin.png')}}"></a>
+			<a href="//github.com/wbhurst3"><img src="{{ url_for('static', filename='github.png')}}"></a>
+		</div>
+	</div>
+</body>
+</html>
